@@ -1,0 +1,355 @@
+.app__carousel {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.app__carousel input {
+    display: none;
+}
+
+.app__carousel-cards {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: relative;
+}
+
+.app__carousel-cards label {
+    width: 50%;
+    height: 80%;
+    transition: 0.4s ease;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.input1:checked ~ .app__carousel-cards .card1,
+.input2:checked ~ .app__carousel-cards .card2,
+.input3:checked ~ .app__carousel-cards .card3,
+.input4:checked ~ .app__carousel-cards .card4,
+.input5:checked ~ .app__carousel-cards .card5,
+.input6:checked ~ .app__carousel-cards .card6,
+.input7:checked ~ .app__carousel-cards .card7,
+.input8:checked ~ .app__carousel-cards .card8,
+.input9:checked ~ .app__carousel-cards .card9 {
+    transform: translate3d(-50%, -50%, 0);
+    box-shadow: 0 15px 20px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card2,
+.input2:checked ~ .app__carousel-cards .card3,
+.input3:checked ~ .app__carousel-cards .card4,
+.input4:checked ~ .app__carousel-cards .card5,
+.input5:checked ~ .app__carousel-cards .card6,
+.input6:checked ~ .app__carousel-cards .card7,
+.input7:checked ~ .app__carousel-cards .card8,
+.input8:checked ~ .app__carousel-cards .card9,
+.input9:checked ~ .app__carousel-cards .card1 {
+    transform: translate3d(-20%, -50%, -200px);
+    box-shadow: 0 20px 30px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card3,
+.input2:checked ~ .app__carousel-cards .card4,
+.input3:checked ~ .app__carousel-cards .card5,
+.input4:checked ~ .app__carousel-cards .card6,
+.input5:checked ~ .app__carousel-cards .card7,
+.input6:checked ~ .app__carousel-cards .card8,
+.input7:checked ~ .app__carousel-cards .card9,
+.input8:checked ~ .app__carousel-cards .card1,
+.input9:checked ~ .app__carousel-cards .card2 {
+    transform: translate3d(10%, -50%, -400px);
+    box-shadow: 0 25px 40px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card4,
+.input2:checked ~ .app__carousel-cards .card5,
+.input3:checked ~ .app__carousel-cards .card6,
+.input4:checked ~ .app__carousel-cards .card7,
+.input5:checked ~ .app__carousel-cards .card8,
+.input6:checked ~ .app__carousel-cards .card9,
+.input7:checked ~ .app__carousel-cards .card1,
+.input8:checked ~ .app__carousel-cards .card2,
+.input9:checked ~ .app__carousel-cards .card3 {
+    transform: translate3d(40%, -50%, -600px);
+    box-shadow: 0 30px 50px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card5,
+.input2:checked ~ .app__carousel-cards .card6,
+.input3:checked ~ .app__carousel-cards .card7,
+.input4:checked ~ .app__carousel-cards .card8,
+.input5:checked ~ .app__carousel-cards .card9,
+.input6:checked ~ .app__carousel-cards .card1,
+.input7:checked ~ .app__carousel-cards .card2,
+.input8:checked ~ .app__carousel-cards .card3,
+.input9:checked ~ .app__carousel-cards .card4 {
+    transform: translate3d(70%, -50%, -800px);
+    box-shadow: 0 35px 60px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card6,
+.input2:checked ~ .app__carousel-cards .card7,
+.input3:checked ~ .app__carousel-cards .card8,
+.input4:checked ~ .app__carousel-cards .card9,
+.input5:checked ~ .app__carousel-cards .card1,
+.input6:checked ~ .app__carousel-cards .card2,
+.input7:checked ~ .app__carousel-cards .card3,
+.input8:checked ~ .app__carousel-cards .card4,
+.input9:checked ~ .app__carousel-cards .card5 {
+    transform: translate3d(-170%, -50%, -800px);
+    box-shadow: 0 35px 60px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card7,
+.input2:checked ~ .app__carousel-cards .card8,
+.input3:checked ~ .app__carousel-cards .card9,
+.input4:checked ~ .app__carousel-cards .card1,
+.input5:checked ~ .app__carousel-cards .card2,
+.input6:checked ~ .app__carousel-cards .card3,
+.input7:checked ~ .app__carousel-cards .card4,
+.input8:checked ~ .app__carousel-cards .card5,
+.input9:checked ~ .app__carousel-cards .card6 {
+    transform: translate3d(-140%, -50%, -600px);
+    box-shadow: 0 30px 50px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card8,
+.input2:checked ~ .app__carousel-cards .card9,
+.input3:checked ~ .app__carousel-cards .card1,
+.input4:checked ~ .app__carousel-cards .card2,
+.input5:checked ~ .app__carousel-cards .card3,
+.input6:checked ~ .app__carousel-cards .card4,
+.input7:checked ~ .app__carousel-cards .card5,
+.input8:checked ~ .app__carousel-cards .card6,
+.input9:checked ~ .app__carousel-cards .card7 {
+    transform: translate3d(-110%, -50%, -400px);
+    box-shadow: 0 25px 40px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card9,
+.input2:checked ~ .app__carousel-cards .card1,
+.input3:checked ~ .app__carousel-cards .card2,
+.input4:checked ~ .app__carousel-cards .card3,
+.input5:checked ~ .app__carousel-cards .card4,
+.input6:checked ~ .app__carousel-cards .card5,
+.input7:checked ~ .app__carousel-cards .card6,
+.input8:checked ~ .app__carousel-cards .card7,
+.input9:checked ~ .app__carousel-cards .card8 {
+    transform: translate3d(-80%, -50%, -200px);
+    box-shadow: 0 20px 30px rgba(50, 50, 50, 0.8);
+}
+
+.input1:checked ~ .app__carousel-cards .card1:active,
+.input2:checked ~ .app__carousel-cards .card2:active,
+.input3:checked ~ .app__carousel-cards .card3:active,
+.input4:checked ~ .app__carousel-cards .card4:active,
+.input5:checked ~ .app__carousel-cards .card5:active,
+.input6:checked ~ .app__carousel-cards .card6:active,
+.input7:checked ~ .app__carousel-cards .card7:active,
+.input8:checked ~ .app__carousel-cards .card8:active,
+.input9:checked ~ .app__carousel-cards .card9:active {
+    transform: translate3d(-50%, -50%, 0) scale(1.05);
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__carousel-cards label {
+        width: 40%;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__carousel-cards label {
+        width: 60%;
+        height: 70%;
+    }
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .app__carousel-cards label {
+        height: 60%;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__carousel-cards label {
+        width: 100%;
+        height: 45%;
+    }
+
+    .input1:checked ~ .app__carousel-cards .card1,
+    .input2:checked ~ .app__carousel-cards .card2,
+    .input3:checked ~ .app__carousel-cards .card3,
+    .input4:checked ~ .app__carousel-cards .card4,
+    .input5:checked ~ .app__carousel-cards .card5,
+    .input6:checked ~ .app__carousel-cards .card6,
+    .input7:checked ~ .app__carousel-cards .card7,
+    .input8:checked ~ .app__carousel-cards .card8,
+    .input9:checked ~ .app__carousel-cards .card9 {
+        transform: translate3d(-50%, -50%, 0);
+        box-shadow: 0 0 30px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card2,
+    .input2:checked ~ .app__carousel-cards .card3,
+    .input3:checked ~ .app__carousel-cards .card4,
+    .input4:checked ~ .app__carousel-cards .card5,
+    .input5:checked ~ .app__carousel-cards .card6,
+    .input6:checked ~ .app__carousel-cards .card7,
+    .input7:checked ~ .app__carousel-cards .card8,
+    .input8:checked ~ .app__carousel-cards .card9,
+    .input9:checked ~ .app__carousel-cards .card1 {
+        transform: translate3d(-50%, -20%, -150px);
+        box-shadow: 0 0 40px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card3,
+    .input2:checked ~ .app__carousel-cards .card4,
+    .input3:checked ~ .app__carousel-cards .card5,
+    .input4:checked ~ .app__carousel-cards .card6,
+    .input5:checked ~ .app__carousel-cards .card7,
+    .input6:checked ~ .app__carousel-cards .card8,
+    .input7:checked ~ .app__carousel-cards .card9,
+    .input8:checked ~ .app__carousel-cards .card1,
+    .input9:checked ~ .app__carousel-cards .card2 {
+        transform: translate3d(-50%, 10%, -300px);
+        box-shadow: 0 0 50px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card4,
+    .input2:checked ~ .app__carousel-cards .card5,
+    .input3:checked ~ .app__carousel-cards .card6,
+    .input4:checked ~ .app__carousel-cards .card7,
+    .input5:checked ~ .app__carousel-cards .card8,
+    .input6:checked ~ .app__carousel-cards .card9,
+    .input7:checked ~ .app__carousel-cards .card1,
+    .input8:checked ~ .app__carousel-cards .card2,
+    .input9:checked ~ .app__carousel-cards .card3 {
+        transform: translate3d(-50%, 40%, -450px);
+        box-shadow: 0 0 60px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card5,
+    .input2:checked ~ .app__carousel-cards .card6,
+    .input3:checked ~ .app__carousel-cards .card7,
+    .input4:checked ~ .app__carousel-cards .card8,
+    .input5:checked ~ .app__carousel-cards .card9,
+    .input6:checked ~ .app__carousel-cards .card1,
+    .input7:checked ~ .app__carousel-cards .card2,
+    .input8:checked ~ .app__carousel-cards .card3,
+    .input9:checked ~ .app__carousel-cards .card4 {
+        transform: translate3d(-50%, 70%, -600px);
+        box-shadow: 0 0 70px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card6,
+    .input2:checked ~ .app__carousel-cards .card7,
+    .input3:checked ~ .app__carousel-cards .card8,
+    .input4:checked ~ .app__carousel-cards .card9,
+    .input5:checked ~ .app__carousel-cards .card1,
+    .input6:checked ~ .app__carousel-cards .card2,
+    .input7:checked ~ .app__carousel-cards .card3,
+    .input8:checked ~ .app__carousel-cards .card4,
+    .input9:checked ~ .app__carousel-cards .card5 {
+        transform: translate3d(-50%, -170%, -600px);
+        box-shadow: 0 0 70px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card7,
+    .input2:checked ~ .app__carousel-cards .card8,
+    .input3:checked ~ .app__carousel-cards .card9,
+    .input4:checked ~ .app__carousel-cards .card1,
+    .input5:checked ~ .app__carousel-cards .card2,
+    .input6:checked ~ .app__carousel-cards .card3,
+    .input7:checked ~ .app__carousel-cards .card4,
+    .input8:checked ~ .app__carousel-cards .card5,
+    .input9:checked ~ .app__carousel-cards .card6 {
+        transform: translate3d(-50%, -140%, -450px);
+        box-shadow: 0 0 60px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card8,
+    .input2:checked ~ .app__carousel-cards .card9,
+    .input3:checked ~ .app__carousel-cards .card1,
+    .input4:checked ~ .app__carousel-cards .card2,
+    .input5:checked ~ .app__carousel-cards .card3,
+    .input6:checked ~ .app__carousel-cards .card4,
+    .input7:checked ~ .app__carousel-cards .card5,
+    .input8:checked ~ .app__carousel-cards .card6,
+    .input9:checked ~ .app__carousel-cards .card7 {
+        transform: translate3d(-50%, -110%, -300px);
+        box-shadow: 0 0 50px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card9,
+    .input2:checked ~ .app__carousel-cards .card1,
+    .input3:checked ~ .app__carousel-cards .card2,
+    .input4:checked ~ .app__carousel-cards .card3,
+    .input5:checked ~ .app__carousel-cards .card4,
+    .input6:checked ~ .app__carousel-cards .card5,
+    .input7:checked ~ .app__carousel-cards .card6,
+    .input8:checked ~ .app__carousel-cards .card7,
+    .input9:checked ~ .app__carousel-cards .card8 {
+        transform: translate3d(-50%, -80%, -150px);
+        box-shadow: 0 0 40px rgba(50, 50, 50, 0.8);
+    }
+
+    .input1:checked ~ .app__carousel-cards .card1:active,
+    .input2:checked ~ .app__carousel-cards .card2:active,
+    .input3:checked ~ .app__carousel-cards .card3:active,
+    .input4:checked ~ .app__carousel-cards .card4:active,
+    .input5:checked ~ .app__carousel-cards .card5:active,
+    .input6:checked ~ .app__carousel-cards .card6:active,
+    .input7:checked ~ .app__carousel-cards .card7:active,
+    .input8:checked ~ .app__carousel-cards .card8:active,
+    .input9:checked ~ .app__carousel-cards .card9:active {
+        transform: translate3d(-50%, -50%, 0) scale(1.03);
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .app__carousel-cards label {
+        height: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__carousel-cards label {
+        height: 30%;
+    }
+}
+
+
+
+@media screen and (max-width: 300px) {
+    .app__carousel-cards label {
+        height: 40%;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) and (max-height: 700px) {
+    .app__carousel-cards label {
+        height: 100%;
+    }
+}

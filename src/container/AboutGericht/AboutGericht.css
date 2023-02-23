@@ -1,0 +1,26 @@
+.app__aboutgericht {
+    width: 100%;
+    background-color: var(--color-black);
+    text-align: center;
+}
+
+.app__aboutgericht p {
+    width: 70%;
+    margin: 5rem auto 0;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__aboutgericht p {
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__aboutgericht p {
+        width: 90%;
+    }
+}

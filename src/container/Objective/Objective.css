@@ -1,0 +1,74 @@
+.app__objective {
+    width: 100%;
+    background-color: var(--color-black);
+    text-align: center;
+}
+
+.app__objective h1 {
+    margin-bottom: 5rem;
+}
+
+.app__objective p {
+    width: 80%;
+    margin: auto;
+}
+
+.app__objective-buttons {
+    width: 50%;
+    margin: 12rem auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__objective h1 {
+        margin-bottom: 8rem;
+    }
+
+    .app__objective-buttons {
+        width: 40%;
+        margin: 15rem auto 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__objective-buttons {
+        width: 60%;
+        margin: 10rem auto 0;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__objective-buttons {
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__objective h1 {
+        margin-bottom: 5rem;
+    }
+    
+    .app__objective p {
+        width: 90%;
+    }
+
+    .app__objective-buttons {
+        flex-direction: column;
+    }
+
+    .app__objective-buttons button {
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+}

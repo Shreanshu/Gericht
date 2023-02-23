@@ -1,0 +1,252 @@
+.app__booking {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20rem 15rem;
+    background-color: var(--color-black);
+}
+
+.app__booking-content {
+    width: 100%;
+    padding: 10rem 0;
+    border: 1px solid var(--color-golden);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__booking-content .subheading {
+    text-align: center;
+}
+
+.app__booking-confirmation {
+    width: 70%;
+    margin: 10rem 0 5rem;
+    text-align: center;
+    text-transform: initial !important;
+    color: var(--color-golden) !important;
+}
+
+.app__booking-content_inputfields {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.app__booking-content_inputfields .query {
+    width: 26%;
+    margin: 12rem auto;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid var(--color-golden);
+    border-radius: 3px;
+    outline: none;
+    background-color: var(--color-black);
+    color: var(--color-golden);
+    box-sizing: border-box;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia() saturate(500%) hue-rotate(0deg);
+}
+
+.app__booking-content_inputfields .query option {
+    text-indent: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-black);
+    background-color: var(--color-golden);
+}
+
+.app__booking-content_inputfields .query option:hover {
+    color: (--color-golden);
+    background-color: (--color-black);
+}
+
+#message-1 {
+    left: 3%;
+}
+
+#message-2 {
+    left: 36%;
+}
+
+#message-3 {
+    left: 69%;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__booking-confirmation {
+        width: 60%;
+        margin: 20rem 0 10rem;
+    }
+
+    .app__booking-content_inputfields .query {
+        padding: 2rem 3rem;
+        font-size: 3rem;
+    }
+
+    .app__booking-content button {
+        padding: 1rem 8rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1151px) and (max-width: 1999px) {
+    .app__booking-content_inputfields .query {
+        padding: 1.5rem 3rem;
+    }
+
+    .app__booking-content button {
+        padding: 1rem 6rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__booking-confirmation {
+        width: 80%;
+        margin: 15rem 0 5rem;
+    }
+
+    .app__booking-content_inputfields {
+        flex-direction: column;
+        margin: 12rem auto 8rem;
+    }
+
+    .app__booking-content_inputfields .query {
+        width: 80%;
+        margin: 3rem auto;
+        padding: 1.5rem 3rem;
+    }
+
+    .app__booking-content button {
+        width: 80%;
+    }
+
+    #message-1 {
+        top: 50.5%;
+        left: 12%;
+    }
+
+    #message-2 {
+        top: 62.5%;
+        left: 12%;
+    }
+
+    #message-3 {
+        top: 74.5%;
+        left: 12%;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__booking {
+        padding: 20rem 10rem;
+    }
+
+    .app__booking-content button {
+        width: 62%;
+    }
+
+    #message-1 {
+        top: 50.5%;
+    }
+
+    #message-2 {
+        top: 63%;
+    }
+
+    #message-3 {
+        top: 75%;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__booking {
+        padding: 20rem 5rem;
+    }
+
+    .app__booking-content h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .app__booking-confirmation {
+        margin: 12rem 0 5rem;
+    }
+
+    .app__booking-content_inputfields {
+        margin: 12rem auto 5rem;
+    }
+
+    .app__booking-content_inputfields .query {
+        margin: 3rem auto;
+        padding: 1.2rem 1rem;
+    }
+
+    #message-1 {
+        top: 51%;
+    }
+
+    #message-2 {
+        top: 63.5%;
+    }
+
+    #message-3 {
+        top: 76%;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__booking {
+        padding: 15rem 3rem;
+    }
+
+    .app__booking-content_inputfields .query {
+        padding: 1.2rem 1rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__booking-content_inputfields .query {
+        padding: 1.2rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    #message-1 {
+        top: 50%;
+        left: 5%;
+    }
+
+    #message-2 {
+        top: 62.5%;
+        left: 5%;
+    }
+
+    #message-3 {
+        top: 75%;
+        left: 5%;
+    }
+}

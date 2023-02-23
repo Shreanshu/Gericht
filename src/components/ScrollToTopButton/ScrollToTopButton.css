@@ -1,0 +1,110 @@
+.app__scrollbutton {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #d0bd79;
+    cursor: pointer;
+
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 999;
+}
+
+.app__scrollbutton:hover {
+    background-color: var(--color-crimson);
+}
+
+.app__scrollbutton:active {
+    transform: scale(1.03);
+}
+
+.app__scrollbutton svg {
+    font-size: 2rem;
+    animation: LinearTraverse 0.8s infinite linear alternate-reverse;
+}
+
+.app__scrollbutton:hover svg {
+    animation: none;
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__scrollbutton {
+        width: 10rem;
+        height: 10rem;
+    
+        bottom: 8rem;
+        right: 10rem;
+    }
+
+    .app__scrollbutton svg {
+        font-size: 5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__scrollbutton {
+        width: 8rem;
+        height: 8rem;
+    
+        bottom: 5rem;
+        right: 6rem;
+    }
+
+    .app__scrollbutton svg {
+        font-size: 3.8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__scrollbutton {
+        width: 8rem;
+        height: 8rem;
+    
+        bottom: 5rem;
+        right: 4rem;
+    }
+
+    .app__scrollbutton svg {
+        font-size: 3.2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__scrollbutton {
+        width: 6rem;
+        height: 6rem;
+    
+        bottom: 5rem;
+        right: 3rem;
+    }
+
+    .app__scrollbutton svg {
+        font-size: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__scrollbutton {
+        width: 5rem;
+        height: 5rem;
+    
+        bottom: 5rem;
+        right: 3rem;
+    }
+
+    .app__scrollbutton svg {
+        font-size: 2.6rem;
+    }
+}

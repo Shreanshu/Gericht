@@ -1,0 +1,213 @@
+.app__blogcardbrief {
+    width: 45%;
+    border: 2px solid var(--color-golden);
+    background-color: var(--color-black);
+}
+
+.app__blogcardbrief:nth-child(2n) { 
+    margin-bottom: 8rem;
+}
+
+.app__blogcardbrief:last-child {
+    margin-bottom: 0;
+}
+
+.app__blogcardbrief-img {
+    width: 100%;
+    border: none;
+}
+
+.app__blogcardbrief-img img {
+    width: 100%;
+    border-bottom: 2px solid var(--color-golden);
+}
+
+.app__blogcardbrief-content {
+    width: 100%;
+    padding: 1.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app__blogcardbrief-content_blogdetails {
+    width: 100%;
+    margin-bottom: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__blogcardbrief-content_blogdetails-date,
+.app__blogcardbrief-content_blogdetails-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__blogcardbrief-content_blogdetails-date svg {
+    font-size: 1.2rem;
+}
+
+.app__blogcardbrief-content_blogdetails-author svg {
+    font-size: 1.5rem;
+}
+
+.app__blogcardbrief-content_blogdetails-date p,
+.app__blogcardbrief-content_blogdetails-author p {
+    margin-left: 0.5rem;
+}
+
+.app__blogcardbrief-content_blogdetails .author:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.app__blogcardbrief-content > p {
+    margin-bottom: 2rem;
+}
+
+.app__blogcardbrief-content .blogtitlebrief {
+    color: var(--color-golden);
+    font-size: 4rem;
+    line-height: 56px;
+}
+
+.app__blogcardbrief-content .blogtitlebrief:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.app__blogcardbrief-content button {
+    margin: 2rem 0 1rem;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__blogcardbrief-content_blogdetails {
+        margin-bottom: 8rem;
+    }
+
+    .app__blogcardbrief-content_blogdetails-date svg {
+        font-size: 2.5rem;
+    }
+
+    .app__blogcardbrief-content_blogdetails-author svg {
+        font-size: 3rem;
+    }
+
+    .app__blogcardbrief-content > p {
+        margin-bottom: 5rem;
+    }
+
+    .app__blogcardbrief-content .blogtitlebrief {
+        font-size: 7rem;
+        line-height: 100px;
+    }
+}
+
+
+
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+    .app__blogcardbrief-content .blogtitle {
+        font-size: 4rem;
+        line-height: 56px;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__blogcardbrief {
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+
+    .app__blogcardbrief:nth-child(3n),
+    .app__blogcardbrief:nth-child(2n) {
+        margin-bottom: 8rem;
+    }
+
+    .app__blogcardbrief:last-child {
+        margin-bottom: 0;
+    }
+    
+    .app__blogcardbrief-content {
+        padding: 1.5rem 2rem 0.8rem;
+    }
+
+    .app__blogcardbrief-content .blogtitlebrief {
+        font-size: 4rem;
+        line-height: 56px;
+        margin-bottom: 3rem;
+    }
+
+    .app__blogcardbrief-content button {
+        margin: 3rem 0 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .app__blogcardbrief-content {
+        padding: 2rem 2rem 1rem;
+    }
+
+    .app__blogcardbrief-content .blogtitlebrief {
+        font-size: 4rem;
+        line-height: 56px;
+    }
+
+    .app__blogcardbrief-content button {
+        margin-left: 1.3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__blogcardbrief {
+        border: 2px solid var(--color-golden);
+    }
+
+    .app__blogcardbrief-content {
+        padding: 2rem 2rem 1rem;
+    }
+
+    .app__blogcardbrief-content_blogdetails {
+        margin-bottom: 3rem;
+    }
+
+    .app__blogcardbrief-content_blogdetails-date svg {
+        font-size: 1rem;
+    }
+    
+    .app__blogcardbrief-content_blogdetails-author svg {
+        font-size: 1.3rem;
+    }
+
+    .app__blogcardbrief-content .blogtitlebrief {
+        font-size: 3rem;
+        line-height: 46px;
+        margin-bottom: 1rem;
+    }
+
+    .app__blogcardbrief-content button {
+        margin-top: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__blogcardbrief-content {
+        padding: 1rem 1.2rem 0;
+    }
+}

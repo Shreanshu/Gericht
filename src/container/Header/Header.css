@@ -1,0 +1,90 @@
+.app__header {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: var(--color-black);
+}
+
+.app__header-h1 {
+    margin-top: 2rem;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 110px;
+    font-size: 90px;
+}
+
+.app__header .app__wrapper_info button {
+    margin-top: 5rem;
+}
+
+.app__header-img img {
+    width: 80%;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__header {
+        margin-top: 8rem;
+    }
+
+    .app__header-h1 {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+        line-height: 120px;
+        font-size: 120px;
+    }
+
+    .app__header .app__wrapper_info button {
+        margin-top: 10rem;
+    }
+  }
+
+
+
+@media screen and (min-width: 1150px) and (max-width: 2000px) {
+    .app__header .app__wrapper_info button {
+        margin-top: 5rem;
+    }
+  }
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__header .app__wrapper_info button {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+  }
+
+
+
+@media screen and (max-width: 850px) {
+    .app__header-h1 {
+        margin-top: 3rem;
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .app__header .app__wrapper_info button {
+        margin: 3rem 0 5rem 3rem;
+    }
+  }
+
+
+
+@media screen and (max-width: 650px) {
+    .app__header .app__wrapper_info button {
+        margin: 3rem 0 5rem 2.5rem;
+    }
+  }
+
+
+
+@media screen and (max-width: 450px) {
+    .app__header-h1 {
+        line-height: 70px;
+        font-size: 50px;
+    }
+}

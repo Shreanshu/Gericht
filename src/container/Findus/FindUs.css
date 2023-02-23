@@ -1,0 +1,59 @@
+.app__findus {
+    background-color: var(--color-black);
+}
+
+.app__findus h1 {
+    margin-bottom: 3rem;
+}
+
+.app__findus .app__wrapper-content p:first-child {
+    margin-bottom: 6rem;
+}
+
+.app__findus button {
+    margin-top: 5rem;
+}
+
+.app__findus .app__wrapper_img {
+    margin-top: -2rem;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__findus .app__wrapper-content p:first-child {
+        margin-bottom: 12rem;
+    }
+
+    .app__findus button {
+        margin-top: 15rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__findus button {
+        margin-bottom: 5rem;
+    }
+
+    .app__findus .app__wrapper_img {
+        margin-top: 5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__findus button {
+        margin-left: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__findus button {
+        margin-left: 2.5rem;
+    }
+}

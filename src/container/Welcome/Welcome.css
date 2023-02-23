@@ -1,0 +1,35 @@
+.app__welcome {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-black);
+
+    position: relative;
+}
+
+.app__welcome-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.app__welcome-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__welcome-title {
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.app__welcome-title h1 {
+    font-family: var(--font-style);
+    font-weight: 500;
+    color: #dec773;
+}

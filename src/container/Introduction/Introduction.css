@@ -1,0 +1,29 @@
+.app__introduction {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    position: relative;
+}
+
+.app__introduction-video {
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.9; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.app__introduction-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__introduction-cardcontainer {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: scale(0.9);
+}

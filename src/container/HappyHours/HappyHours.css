@@ -1,0 +1,88 @@
+.app__happyhours {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-black);
+
+    position: relative;
+}
+
+.app__happyhours-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.app__happyhours-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__happyhours-title {
+    width: 80%;
+    z-index: 1;
+    text-align: center;
+}
+
+.app__happyhours-title p:first-child {
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 160px;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__happyhours-title p:first-child {
+        font-size: 15rem;
+        line-height: 250px;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__happyhours-title p:first-child {
+        font-size: 7rem;
+        line-height: 120px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__happyhours-title p:first-child {
+        font-size: 6rem;
+        line-height: 100px;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__happyhours {
+        min-height: 60vh;
+    }
+
+    .app__happyhours-title p:first-child {
+        font-size: 4rem;
+        line-height: 100px;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__happyhours-title {
+        width: 90%;
+    }
+
+    .app__happyhours-title p:first-child {
+        font-size: 4rem;
+        line-height: 80px;
+    }
+}

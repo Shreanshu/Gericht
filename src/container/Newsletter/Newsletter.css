@@ -1,0 +1,216 @@
+.app__newsletter_wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20rem 15rem 10rem;
+    background-color: var(--color-black);
+    position: relative;
+}
+
+.app__newsletter {
+    padding: 12rem 10rem 10rem;
+    border: 1px solid var(--color-golden);
+    background-color: var(--color-black);
+    text-align: center;
+}
+
+.app__newsletter-heading {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.app__newsletter-heading h1 {
+    margin-bottom: 3rem;
+}
+
+.app__newsletter-confirmation {
+    margin-top: 12rem;
+    text-align: center;
+    color: var(--color-golden) !important;
+    text-transform: initial !important;
+}
+
+.app__newsletter-unsubscribe {
+    margin-top: 5rem;
+}
+
+.app__newsletter-input {
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.app__newsletter-input input {
+    width: 500px;
+    border: 1px solid var(--color-golden);
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    outline: none;
+    margin-right: 2rem;
+    padding: 1.6rem 1rem;
+    background-color: var(--color-black);
+}
+
+.app__newsletter-input button {
+    width: max-content;
+}
+
+#message {
+    top: 80%;
+    left: 28%;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__newsletter {
+        padding: 15rem 10rem 10rem;
+    }
+    
+    .app__newsletter-heading {
+        margin-bottom: 15rem;
+    }
+
+    .app__newsletter-confirmation {
+        margin-top: 20rem;
+    }
+
+    .app__newsletter-input input {
+        width: 800px;
+        font-size: 3rem;
+        padding: 2rem;
+    }
+
+    #message {
+        top: 84%;
+        left: 33%;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__newsletter-input {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .app__newsletter-input input {
+        width: 100%;
+        margin: 0 0 3rem 0;
+        text-align: center;
+    }
+    
+    .app__newsletter-input button {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    #message {
+        width: 40%;
+        top: 71%;
+        left: 30%;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__newsletter_wrapper {
+        padding: 20rem 10rem 10rem;
+    }
+
+    .app__newsletter {
+        padding: 10rem 6rem;
+    }
+
+    .app__newsletter-confirmation {
+        margin-top: 15rem;
+    }
+    
+    .app__newsletter-input button {
+        width: 77%;
+    }
+
+    #message {
+        width: 55%;
+        top: 71%;
+        left: 22%;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__newsletter_wrapper {
+        padding: 20rem 5rem;
+    }
+
+    .app__newsletter {
+        padding: 10rem 2rem 5rem;
+        /* border: none; */
+    }
+    
+    .app__newsletter-input input {
+        font-size: 1.5rem;
+    }
+
+    #message {
+        width: 70%;
+        font-size: 1.6rem;
+        top: 69%;
+        left: 15%;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__newsletter_wrapper {
+        padding: 15rem 3rem;
+    }
+    
+    .app__newsletter-heading h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .app__newsletter-confirmation {
+        margin-top: 10rem;
+    }
+
+    .app__newsletter-input input {
+        font-size: 2rem;
+    }
+
+    #message {
+        top: 68%;
+        left: 16%;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    #message {
+        top: 69%;
+        left: 16%;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__newsletter-input input {
+        font-size: 1.6rem;
+    }
+
+    #message {
+        padding-top: 1.3rem;
+        font-size: 1.3rem;
+        top: 69%;
+        left: 15%;
+    }
+}

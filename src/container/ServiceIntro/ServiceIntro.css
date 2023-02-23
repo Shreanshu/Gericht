@@ -1,0 +1,79 @@
+.app__serviceintro {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-black);
+    position: relative;
+}
+
+.app__serviceintro-img {
+    width: 50%;
+    background-color: var(--color-black);
+}
+
+.app__serviceintro-img img {
+    width: 100%;
+    border: 1px solid var(--color-golden);
+    opacity: 0.8;
+}
+
+.app__serviceintro-title {
+    width: 80%;
+    font-family: var(--font-base);
+    font-weight: 900;
+    font-size: 10rem;
+    text-align: center;
+    text-transform: inherit;
+    color: var(--color-golden);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__serviceintro-title {
+        font-size: 16rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__serviceintro {
+        min-height: 80vh;
+    }
+    
+    .app__serviceintro-img {
+        width: 60%;
+    }
+
+    .app__serviceintro-title {
+        font-size: 8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__serviceintro-title {
+        font-size: 6rem;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__serviceintro {
+        min-height: 50vh;
+    }
+    
+    .app__serviceintro-img {
+        width: 80%;
+    }
+
+    .app__serviceintro-title {
+        font-size: 5rem;
+    }
+}
